@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Tran Si Hoang]
+ * MSSV:      [PS49106]
+ * Lớp:       [CS21301]
  *****************************************************************************/
 
 // BÀI 4: XÂY DỰNG CHƯƠNG TRÌNH TÍNH ĐIỂM TRUNG BÌNH 
@@ -14,13 +14,23 @@
 
 int main(){
     // Khai báo biến
+        float toan, ly, hoa;
+    float diemTrungBinh;
 
     // Nhập dữ liệu
+ printf("Nhập điểm Toán: ");
+    scanf("%f", &toan);
 
+    printf("Nhập điểm Lý: ");
+    scanf("%f", &ly);
+
+    printf("Nhập điểm Hóa: ");
+    scanf("%f", &hoa);
 
     // Xử lý, tính toán
-
+    diemTrungBinh = (toan * 3 + ly * 2 + hoa * 1) / (3 + 2 + 1);
     // Hiển thị kết quả
-
+ printf("Điểm trung bình: %.2f\n", diemTrungBinh);
+    return 0;
 
 }
